@@ -66,8 +66,8 @@
 }
 
 .add-to-cart-button {
-    background-color: #f00;
-    color: #fff;
+    background-color: #EE7824;
+    color: #FFF7F3;
     border: none;
     border-radius: 4px;
     padding: 8px 16px;
@@ -80,7 +80,7 @@
 }
 
 .flex-container {
-    background-color: #df2222;
+    background-color: #EE7824;
     margin: 10px;
     padding: 20px;
     font-size: 30px;
