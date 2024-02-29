@@ -226,33 +226,40 @@
       </div>
     </section>
 
-    <div class="product-card">
-      <div class="product-image">
-          <img src="images/ảnh thức ăn/ảnh 4.jpg" alt="Pedigree PRO PUPPY B">
-      </div>
-      <div class="product-details">
-        <h2 class="product-title">Pedigree PRO PUPPY B</h2>
-        <p class="product-subtitle">Nostrud Exercitation</p>
-        <p class="product-price">98.000 đ <span class="discount-price">93.000 đ</span></p>
-        <p class="product-description">Lorem Ipsum Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-        <div class="product-options">
-            <div class="option">
-                <label for="paper-type">Khối lượng:</label>
-                <select id="paper-type">
-                    <option value="ruled">Ruled</option>
-                    <option value="plain">Plain</option>
-                    <option value="grid">Grid</option>
-                </select>
-            </div>
-            <div class="option">
-                <label for="quantity">Số lượng:</label>
-                <input type="number" id="quantity" value="1">
-            </div>
+    <!-- Singer product -->
+    <section class="section section-lg bg-default">
+      <div class="product-card">
+        <div class="product-image">
+            <img src="images/ảnh thức ăn/ảnh 4.jpg" alt="Pedigree PRO PUPPY B">
         </div>
-        <button class="add-to-cart-button">Thêm vào giỏ hàng</button>
-        <button class="add-to-cart-button">Thanh Toán</button>
+        <div class="product-details">
+          <h2 class="product-title">Pedigree PRO PUPPY B</h2>
+          <p class="product-subtitle">Nostrud Exercitation</p>
+          <p class="product-price">180.000 đ <span class="discount-price">300.000 đ</span></p>
+          <p class="product-description">Dòng sản phẩm thức ăn dành cho cún của Pedigree Pro đáp ứng các nhu cầu đặc biệt cho chú cún của bạn. Dòng sản phẩm này cung cấp các chất dinh dưỡng, kết hợp các thành phần chất lượng cao được phát triển bởi các bác sĩ thú y và chuyên gia dinh dưỡng.</p>
+          <div class="product-options">
+              <div class="option">
+                  <label for="paper-type">Khối lượng:</label>
+                  <select id="paper-type">
+                      <option value="weight">Chọn khối lượng</option>
+                      <option value="weight">1.3kg</option>
+                      <option value="weight">3kg</option>
+                      <option value="weight">8kg</option>
+                      <option value="weight">10kg</option>
+                  </select>
+              </div>
+          </div>
+          <p>Số lượng:</p>
+          <div class="wrapper">
+            <span class="minus">-</span>
+            <span class="num">1</span>
+            <span class="plus">+</span>
+          </div>
+          <button class="add-to-cart-button">Thêm vào giỏ hàng</button>
+          <button class="add-to-cart-button">Thanh Toán</button>
+        </div>
       </div>
-    </div>
+    </section>
     
     <!-- Page Footer-->
     <footer class="section footer-modern context-dark footer-modern-2">
@@ -361,7 +368,32 @@
   </div>
   <!-- Global Mailform Output-->
   <div class="snackbars" id="form-output-global"></div>
+
   <!-- Javascript-->
+  <!-- JS inner source -->
+  <script>
+    const plus = document.querySelector('.plus'), 
+    minus = document.querySelector('.minus'),
+    num = document.querySelector('.num');
+
+    let a = 1;
+    plus.addEventListener('click', ()=>{
+      a++;
+      a = (a < 30) ? + a : a;
+      num.innerText = a;
+      console.log(a);
+    })
+    minus.addEventListener('click', ()=>{
+      if (a > 1) {
+        a--;
+        a = (a < 10) ? + a : a;
+        num.innerText = a;
+      }
+    })
+
+  </script>
+
+  <!-- JS outer source -->
   <script src="js/bootstrap.min.js"></script>
   <script src="js/core.min.js"></script>
   <script src="js/script.js"></script>
