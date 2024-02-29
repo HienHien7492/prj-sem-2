@@ -105,7 +105,7 @@ button:focus {
 	width: 6px;
 	height: 6px;
 	opacity: 0;
-	background: #EE7824;
+	background: #F4AF40;
 	transform: translate3d(-50%, -50%, 0);
 	will-change: transform;
 	transition: all .2s ease;
