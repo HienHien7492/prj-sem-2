@@ -3305,7 +3305,7 @@ p + .quote-classic {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background: rgba(92, 66, 222, 0.44);
+	background: rgba(244, 175, 64, 0.44);
 	pointer-events: none;
 	transition: inherit;
 	z-index: 1;
