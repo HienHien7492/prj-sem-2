@@ -1,0 +1,17 @@
+#search-box {
+    width: 300px;
+    height: 36px;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding-right: 40px;
+  }
+  
+  .search-icon {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    font-size: 18px;
+    color: #999;
+  }
