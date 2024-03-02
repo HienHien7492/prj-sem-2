@@ -143,6 +143,6 @@ p {
 }
 
 /* Responsive */
-@media (min-width: 768px) {
-
+@media (max-width: 576px) {
+    .product-image img {width: 50%;}
 }
