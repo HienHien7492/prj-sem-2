@@ -143,12 +143,11 @@ p {
 }
 
 /* Responsive */
-@media (min-width: 768px) {
-
+@media (max-width: 1440px)  {
+    .add-to-cart-button {
+        margin-bottom: 10px;
+    }
 }
-@media (min-width: 992px) {
-
-}
-@media (min-width: 1200px) {
-
+@media (max-width: 1200px) {
+    
 }
