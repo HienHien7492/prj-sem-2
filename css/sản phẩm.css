@@ -143,6 +143,11 @@ p {
 }
 
 /* Responsive */
-@media (max-width: 480px) {
-    .product-image img {width: 20%;}
+@media (max-width: 1440px)  {
+    .add-to-cart-button {
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 1200px) {
+    
 }
